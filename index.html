@@ -10,58 +10,68 @@
     <!-- CSS FILE-->
     <link rel="stylesheet" href="style.css" >
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Netflix vidoe player</title>
+    <title>Netflix Video Player</title>
 </head>
 <body>
     <h1>Netflix</h1>
     <div class="video_container">
         <video 
             src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4"
-            controls
        ></video>
-       <div class="controls">
+       <div class="controls_container">
+
+          <div class="progress_controls">
+            <div class="progress_bar">
+               <div class="watched_bar"></div>
+               <div class="playhead"></div>
+            </div>
+          </div>
+
+          <div class="controls">
+               <button class="play">
+                    <img src="./icons/play.svg" alt="play">
+               </button>
+               
+               <button class="go_back">  
+                    <img src="./icons/rewind.svg" alt="rewind">
+               </button>
+               
+               <button class="go_forward">
+                    <img src="./icons/fast-forward.svg" alt="fast-forward">
+               </button>
+               
+               <button class="volume">
+                    <img src="./icons/volume-2.svg" alt="volume">
+               </button>
+               
+               <p class="video_title">
+                    <span class="serie_title">Blender Foundation</span> 
+                    <span class="episode_title">&lt; Big Buck Bunny &gt;</span>
+               </p>
+               
+               <button class="help">
+                    <img src="./icons/help-circle.svg" alt="help">
+               </button>
+               
+               <button classs="next">
+                    <img src="./icons/skip-forward.svg" alt="next">
+               </button>
+               
+               <button class="episodes">
+                    <img src="./icons/layers.svg" alt="episodes">
+               </button>
+               
+               <button class="captions">
+                    <img src="./icons/message-square.svg" alt="captions">
+               </button>
+               
+               <button class="full_screen">
+                    <img src="./icons/maximize.svg" alt="full-screen">
+               </button>
+                
+          </div>
             
-           <button class="play">
-               <img src="./icons/play.svg" alt="play">
-           </button>
-
-           <button class="go_back">  
-                <img src="./icons/rewind.svg" alt="rewind">
-           </button>
-
-           <button class="go_forward">
-                <img src="./icons/fast-forward.svg" alt="fast-forward">
-           </button>
-
-           <button class="volume">
-                <img src="./icons/volume-2.svg" alt="volume">
-           </button>
-
-           <p class="video_title">
-               <span class="serie_title">Blender Foundation</span> 
-               <span class="episode_title">&lt; Big Buck Bunny &gt;</span>
-            </p>
-
-           <button class="help">
-                <img src="./icons/help-circle.svg" alt="help">
-           </button>
-
-           <button classs="next">
-                <img src="./icons/skip-forward.svg" alt="next">
-           </button>
-
-           <button class="episodes">
-                <img src="./icons/layers.svg" alt="episodes">
-           </button>
-
-           <button class="captions">
-                <img src="./icons/message-square.svg" alt="captions">
-           </button>
-
-           <button class="full_screen">
-                <img src="./icons/maximize.svg" alt="full-screen">
-           </button>
- 
+           
        </div>
     </div>
     <!-- JS FILE -->

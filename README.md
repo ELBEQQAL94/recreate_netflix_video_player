@@ -19,3 +19,11 @@
 * building custom controls button using button tag.
 
 * styling buttons
+
+* Add keyboard controls
+
+* controls to auto appear on hover
+
+* Hover effects on each buttons
+
+* 
