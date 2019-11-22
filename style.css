@@ -1,0 +1,82 @@
+/*
+ @Founder Name: ELBOQQAL YOUSSEF
+ @DATE: 20/11/2019
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* CUSTOM vidoe tag  */
+.video_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.video_container video {
+    width: 100%;
+    height: 100%;
+}
+
+.video_container .controls {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: yellow;
+    padding: 5px 12px;
+    border-top: 3px solid red;
+}
+
+.video_container .controls button {
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 2vw;
+    border: 2px dashed white;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.video_container .controls button:hover { background-color: #ffffff;}
+.video_container .controls button img {
+    width: 4vw;
+    height: 4vh;
+}
+
+.video_container .controls .video_title {
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_container .controls .video_title .serie_title {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.video_container .controls .video_title .episode_title {
+    color: gray;
+    font-size: 0.75em;
+    padding-left: 1vw
+}
+
