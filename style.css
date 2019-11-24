@@ -12,7 +12,7 @@ body {
     background-color: black;
 }
 
-/* CUSTOM vidoe tag  */
+/* CUSTOM VIDEO TAG */
 .video_container {
     width: 100%;
     height: 100%;
@@ -33,6 +33,7 @@ body {
     width: 100%;
     padding: 2vmin 4vmin;
     background:rgba(14, 14, 13, 0.44);
+    transition: all .7s linear;
 }
 
 .video_container .progress_controls {
@@ -48,10 +49,11 @@ body {
    height: 4vh;
    max-height: 20px;
    border: 1px dashed red;
-   background: black;
+   background: rgb(19, 18, 18);
    display: flex;
    align-items: center;
-   margin: 2vmin 0;
+   margin: 2vmin;
+   cursor: pointer;
 }
 
 .video_container .progress_controls .progress_bar .watched_bar,
@@ -62,7 +64,8 @@ body {
 
 .video_container .progress_controls .progress_bar .watched_bar {
     height: 100%;
-    width: 10%;
+    width: 50%;
+    transition: all .4s ease-in-out;
 }
 
 .video_container .progress_controls .progress_bar .playhead {
@@ -74,6 +77,13 @@ body {
     min-height: 25px;
     min-width: 25px;
     border: 2px solid white;
+}
+
+.video_container .progress_controls .time_remaininng {
+    color: #ffffff;
+    margin: 0 2vmin;
+    font-size: 4vmin;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .video_container .controls {
@@ -94,9 +104,16 @@ body {
 }
 
 .video_container .controls button:hover { background-color: #ffffff;}
+
 .video_container .controls button img {
     width: 4vw;
     height: 4vh;
+    transition: all .7s linear;
+}
+
+.video_container .controls button img:hover {
+    opacity: .9;
+    transform: scale(1.5);
 }
 
 .video_container .controls .video_title {
@@ -106,6 +123,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 500px) {
+    .video_container .controls .video_title {
+        display: none;
+    }
 }
 
 .video_container .controls .video_title .serie_title {
@@ -123,3 +146,8 @@ body {
     padding-left: 1vw
 }
 
+
+.video_container .controls .video_title .serie_title:hover,
+.video_container .controls .video_title .episode_title:hover {
+  background: red
+}
